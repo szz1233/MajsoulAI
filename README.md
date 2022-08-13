@@ -20,7 +20,8 @@ $pip install -r requirements.txt
 ```
 一个特殊的依赖是pytorch，由于其版本与安装方式经常变化，建议参考[官网](https://pytorch.org/get-started/locally/)选择合适的版本的安装命令，例如当前最新的Windows-Pip-Cuda10.2对应的安装命令为：
 ```bash
-$pip install torch===1.7.1 torchvision===0.8.2 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+# $pip install torch===1.7.1 torchvision===0.8.2 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+$pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 完成上述操作后后理论上即可用该虚拟环境完成后续操作。
 
